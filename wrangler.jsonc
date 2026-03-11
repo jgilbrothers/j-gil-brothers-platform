@@ -45,9 +45,9 @@
      * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
      */
     "vars": {
-        "EMAIL_FROM": "no-reply@notifications.lubomirgeorgiev.com",
-        "EMAIL_FROM_NAME": "Lubomir Georgiev",
-        "EMAIL_REPLY_TO": "lubo@lubomirgeorgiev.com"
+        "EMAIL_FROM": "noreply@jgilbrothers.com",
+        "EMAIL_FROM_NAME": "J GIL Brothers",
+        "EMAIL_REPLY_TO": "support@jgilbrothers.com"
     },
     /**
      * Note: Use secrets to store sensitive data.
@@ -84,15 +84,15 @@
     "d1_databases": [
         {
             "binding": "NEXT_TAG_CACHE_D1",
-            "database_name": "cloudflare-workers-nextjs-saas",
-            "database_id": "db968793-55f4-481e-b281-7e1907a775b1",
+            "database_name": "j-gil-brothers-platform",
+            "database_id": "b56eedaf-ad20-4986-a031-32f73ff43858",
             "migrations_dir": "src/db/migrations"
         }
     ],
     "kv_namespaces": [
         {
             "binding": "NEXT_INC_CACHE_KV",
-            "id": "e922d6e22f4a46b6a92be653e90c6ca1"
+            "id": "fbe12b2242964f8a9a234547caa83398"
         }
     ]
   }
