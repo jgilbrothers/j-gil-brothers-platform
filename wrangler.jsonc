@@ -59,11 +59,11 @@
      * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
      */
      "services": [
-      {
-        "binding": "WORKER_SELF_REFERENCE",
-        "service": "cloudflare-workers-nextjs-saas-template"
-      }
-    ],
+  {
+    "binding": "WORKER_SELF_REFERENCE",
+    "service": "j-gil-brothers-platform"
+  }
+],
 
     "durable_objects": {
       "bindings": [
