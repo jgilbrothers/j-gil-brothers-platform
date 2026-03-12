@@ -7,9 +7,14 @@ import { GITHUB_REPO_URL, SITE_DOMAIN } from "@/constants";
 export async function getTotalUsers() {
   return withKVCache(
     async () => {
-      const db = getDB();
+      try {
+        const db = getDB();
 
-      return await db.$count(userTable);
+        return await db.$count(userTable);
+      } catch (error) {
+        console.error("Failed to load total users stats:", error);
+        return null;
+      }
     },
     {
       key: CACHE_KEYS.TOTAL_USERS,
